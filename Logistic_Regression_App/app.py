@@ -95,7 +95,7 @@ div[data-testid="metric-container"]{
 
 </style>
 """,unsafe_allow_html=True)
-from pathlib import path
+from pathlib import Path
 # ==========================
 # LOAD MODEL
 # ==========================
