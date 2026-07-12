@@ -95,11 +95,15 @@ div[data-testid="metric-container"]{
 
 </style>
 """,unsafe_allow_html=True)
+from pathlib import path
 # ==========================
 # LOAD MODEL
 # ==========================
+BASE_DIR = Path(__file__).parent
 
-model = joblib.load("logistic_model.pkl")
+model = joblib.load(BASE_DIR / "logistic_model.pkl")
+
+
 
 # ==========================
 # SIDEBAR
